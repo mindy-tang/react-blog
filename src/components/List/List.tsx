@@ -1,7 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 import { Link } from 'react-router-dom';
-import { Skeleton, Button } from 'antd';
+// import { Skeleton, Button } from 'antd';
 import './List.css';
 
 export interface Artical {
@@ -21,7 +21,7 @@ export default function List({list}: Props) {
         list.map((v: any) => (
             <div className="artical" key={v._id}>
               <div className="dotts"></div>
-              <Link className="date" to={`/detail?id=${v._id}`}>
+              <Link className="date" to={`/detail/${v._id}`}>
                   <span className="trig"></span>
                   <span className="dates">{moment(v.createtime).format('YYYY.MM.DD')}</span>
               </Link>
@@ -29,7 +29,7 @@ export default function List({list}: Props) {
                 <div className="line"></div>
                 <div className="art-content">
                   <p className="art-title">
-                      <Link to={`/detail?id=${v._id}`}>{v.title}</Link>
+                      <Link to={`/detail/${v._id}`}>{v.title}</Link>
                   </p>
                   {/* {
                     v.pics && v.pics.length>0 ?  
