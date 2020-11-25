@@ -14,9 +14,8 @@ export default function Resume() {
                     <div className="boxes default m-b-20">
                         <div className="box bg-gray-lightest p-t-0 p-b-0">
                             <div className="row">
-                                <div className="col-4 p-t-10 p-b-10">● 手机：17623687935</div>
-                                <div className="col-4 p-t-10 p-b-10 border">● Email：mindy_tang@126.com</div>
-                                {/* <div className="col-4 p-t-10 p-b-10 border">● 网站：www.redspite.com</div> */}
+                                <div className="col-4 p-t-10 p-b-10">● Email：mindy_tang@126.com</div>
+                                {/* <div className="col-4 p-t-10 p-b-10 border">● Email：mindy_tang@126.com</div> */}
                             </div>
                         </div>
                     </div>
